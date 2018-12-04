@@ -14,9 +14,12 @@
 	--black-color: #000000;
 	--darkred-color: #9e0b0f;
 	--gray-color: #5a5a5a;
+	--gold-color: #a3620a;
 	--section-heading: 70px;
 	--home-text: 40px;
+	--service-text: 44px;
 	--section-title: 37.33px;
+	--workinfo-para: 28px;
 	--subsection-title: 22px;
 	--section-para: 21px;
 	--section-para-small: 18px;
@@ -24,6 +27,7 @@
 	--wrapper-width: 86%;
 	--section-padding: 6vh 0;
 	--para-lineheight: 30px;
+	--bannersection-height: 800px;
 }
 
 /**
@@ -160,7 +164,7 @@ section .section-head p{
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height: 800px;
+	height:var(--bannersection-height);
 	width: 100%;
 	position: relative;
 }
@@ -170,7 +174,7 @@ section .section-head p{
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height: 80vh;
+	height:var(--bannersection-height);
 	width: 100%;
 	position: relative;
 }
@@ -184,35 +188,63 @@ section .section-head p{
 	position: relative;
 	padding: var(--section-padding);
 }
-
-.work-info .work-box {
-	margin-bottom: 50px;
-}
-
-.work-info .work-box h4 {
-	font-size: 43.33px;
-	color: #a3620a;
-	text-transform: uppercase;
-}
-
-.work-info .work-box p {
-	font-size: 28px;
-	color: #a3620a;
-}
-
 .grid-container {
   display: grid;
   justify-content: center;
 	align-content: center;
 	grid-template-columns: 1fr 1fr;
+	margin-bottom: 20px;
+}
+.service-box-head{
+	position: relative;
+}
+.service-content{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20%;
+	bottom: 0%;
+}
+.service-feature{
+	align-self: center;
+	justify-self: center;
+}
+.service-feature ul li {
+	font-size: var(--section-para);
+	color:#f68e56;
+}
+.service-feature ul li span{
+	color: #544842;
+}
+.tray-image img{
+	display: block;
+	margin: 0 auto;
+}
+.service-content h3{
+	margin: 10px 0;
+	font-size: var(--service-text);
+}
+.service-content h3 span{
+	display: block;
+}
+.work-info .work-box {
+	margin-bottom: 50px;
+}
+
+.work-info .work-box h4 {
+	font-size: var(--service-text);
+	color:var(--gold-color);
+	text-transform: uppercase;
+}
+
+.work-info .work-box p {
+	font-size: var(--workinfo-para);
+	color:var(--gold-color);
 }
 
 .contact-wrapper{
 	padding-bottom: 100px;
-	background: url(../images/abstract-bg.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
 	width: 100%;
 	position: relative;
 }
@@ -221,20 +253,108 @@ section .section-head p{
 textarea{
 	resize: none;
 }
+.form-group label{
+	color: var(--darkred-color);
+}
 .form-control{
 	padding: 8px 15px;
+	background-color: var(--white-color);
+	border:1px solid var(--darkred-color);
 }
-
 .btn-primary{
 	background: var(--darkred-color);
 	color: var(--white-color);
 	transition: 0.2s;
-	border:0px;
+	border:1px solid var(--darkred-color);
 	padding: 8px 25px;
+	text-transform: uppercase;
 }
 .btn-primary:hover{
 	background: var(--white-color);
 	color: var(--darkred-color);
 	transition: 0.2s;
-	border:0px;
+	border:1px solid var(--darkred-color);
+}
+address{
+	color:var(--gold-color);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root {
+		--section-title: 30px;
+		--service-text: 30px;
+    --section-padding: 5vh 0;
+		--section-heading: 50px;
+		--bannersection-height: 600px;
+  }
+  .work-info .work-box h4 {
+    font-size: 24px;
+  }
+  
+  .work-info .work-box p {
+    font-size: 20px;
+  }
+  .work-info .work-box {
+    margin-bottom: 40px;
+  }
+  .work-images.wrapper{
+    padding: 0vh 0vh 5vh 0vh;
+  }
+  .contact-wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+	:root {
+		--default-font: 'Lato', sans-serif;
+		--white-color: #ffffff;
+		--black-color: #000000;
+		--darkred-color: #9e0b0f;
+		--gray-color: #5a5a5a;
+		--gold-color: #a3620a;
+		--section-heading: 35px;
+		--home-text: 30px;
+		--service-text: 22px;
+		--workinfo-para:20px;
+		--section-title: 22px;
+		--subsection-title: 20px;
+		--section-para: 18px;
+		--section-para-small: 16px;
+		--nav-link: 16px;
+		--wrapper-width: 86%;
+		--section-padding: 6vh 0;
+		--para-lineheight: 30px;
+		--bannersection-height: 250px;
+	}
+	.grid-container {
+    display: block;
+	}
+	.service-box-head{
+		margin-bottom: 20px;
+	}
+	.service-content {
+    top: 16%;
+	}
+	.text-wrapper {
+		padding:5% 10%;
+	}
+	.home-banner {
+    height: 55vh;
+	}
+	.work-images img{
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width:320px) and (max-width:413px) {
+	.service-content img{
+		width: 7%;
+	}
+	.service-content h3 {
+    margin: 4px 0;
+    padding: 0;
+    font-size: var(--service-text);
+	}
 }
