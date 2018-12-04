@@ -23,7 +23,7 @@
 	--subsection-title: 22px;
 	--section-para: 21px;
 	--section-para-small: 18px;
-	--nav-link: 16px;
+	--nav-link: 15px;
 	--wrapper-width: 86%;
 	--section-padding: 6vh 0;
 	--para-lineheight: 30px;
@@ -69,19 +69,20 @@ section {
 /**
  * Navigation
  */
-.navbar {
-	background: transparent;
+.navbar.navbar-light.bg-light {
+	background: transparent !important;
 	border-bottom: 1px solid #fff;
 }
 
-.navbar-brand, .navbar-nav .nav-item .nav-link {
+.navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link {
 	color: var(--white-color);
 }
-
-.navbar-brand:hover {
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-brand:hover {
 	color: var(--white-color);
 }
-
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	color: var(--darkred-color);
+}
 .social-links.navbar-nav .nav-item .nav-link {
 	font-size: 15px;
 }
@@ -279,6 +280,17 @@ address{
 	color:var(--gold-color);
 }
 
+@media(min-width:1366px) and (max-width:1440px) {
+	:root{
+		--section-title: 30px;
+		--service-text: 32px;
+		--workinfo-para: 20px;
+		--section-para:20px;
+	}
+	.work-info .work-box h4 {
+		font-size: 24px;
+	}
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   :root {
@@ -322,11 +334,30 @@ address{
 		--subsection-title: 20px;
 		--section-para: 18px;
 		--section-para-small: 16px;
-		--nav-link: 16px;
+		--nav-link: 15px;
 		--wrapper-width: 86%;
 		--section-padding: 6vh 0;
 		--para-lineheight: 30px;
 		--bannersection-height: 250px;
+	}
+	.navbar-brand {
+    font-size: 0.95rem;
+	}
+	.navbar-nav.social-links{
+		display: block;
+		-webkit-box-orient: inherit; 
+   -webkit-box-direction: inherit; 
+    -ms-flex-direction: inherit;
+     flex-direction: inherit; 
+	}
+	.navbar-nav.social-links .nav-item{
+		display: inline-block;
+		width: auto;
+		margin-right: 10px;
+	}
+	.navbar.navbar-light.bg-light {
+		background: rgba(0,0,0,0.4) !important;
+		border-bottom: 1px solid #fff;
 	}
 	.grid-container {
     display: block;
