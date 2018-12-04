@@ -199,3 +199,42 @@ section .section-head p{
 	font-size: 28px;
 	color: #a3620a;
 }
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-wrapper{
+	padding-bottom: 100px;
+	background: url(../images/abstract-bg.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+}
+
+/* Form */
+textarea{
+	resize: none;
+}
+.form-control{
+	padding: 8px 15px;
+}
+
+.btn-primary{
+	background: var(--darkred-color);
+	color: var(--white-color);
+	transition: 0.2s;
+	border:0px;
+	padding: 8px 25px;
+}
+.btn-primary:hover{
+	background: var(--white-color);
+	color: var(--darkred-color);
+	transition: 0.2s;
+	border:0px;
+}
