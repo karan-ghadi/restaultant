@@ -173,6 +173,8 @@ section .section-head p {
 	font-size: var(--subsection-title);
 	text-align: center;
 	color: #362f2d;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .home-banner {
@@ -196,7 +198,7 @@ section .section-head p {
 }
 
 .service-banner {
-	background: url(../images/section-background/section-3.jpg);
+	background: url(../images/section-background/section-3.jpg) #000;
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -256,6 +258,8 @@ section .section-head p {
 .service-feature ul li {
 	font-size: var(--section-para);
 	color: #f68e56;
+	margin-bottom: 20px;
+	line-height: 1.1;
 }
 
 .service-feature ul li span {
@@ -284,6 +288,7 @@ section .section-head p {
 	font-size: var(--service-text);
 	color: var(--gold-color);
 	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .work-info .work-box p {
