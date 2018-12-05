@@ -8,38 +8,41 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/media-query.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 		</head>
 		<body>
-			<!-- Header::Start -->
+
 			<header>
 				<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-					<a class="navbar-brand" href="#">RESTAULTANT VILAS KABADI</a>
+					<a class="navbar-brand" href="index.html">RESTAULTANT VILAS KABADI</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon">
+						<i class="fas fa-bars"></i>
+					</span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="#">HOME</a>
+								<a class="nav-link" href="#home">HOME</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">ABOUT</a>
+								<a class="nav-link" href="#about-us">ABOUT</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">SERVICES</a>
+								<a class="nav-link" href="#services">SERVICES</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">WORK WITH ME</a>
+								<a class="nav-link" href="#work-with-me">WORK WITH ME</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">CONTACT US</a>
+								<a class="nav-link" href="#contact-us">CONTACT US</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav ml-auto social-links">
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" href="#">BOOK MY APPOINTMENT</a>
 							</li>
 							<li class="nav-item">
@@ -71,9 +74,8 @@
 					</div>
 				</nav>
 			</header>
-			<!-- Header::End -->
-			<!-- Home::Start -->
-			<section>
+
+			<section id="home">
 				<div class="home-banner"></div>
 				<div class="home-text">
 					<div class="text-wrapper">
@@ -99,9 +101,8 @@
 					</div>
 				</div>
 			</section>
-			<!-- Home::End -->
-			<!-- About::start -->
-			<section>
+
+			<section id="about-us">
 				<div class="about-banner">
 					<div class="section-head">
 						<h2>Restaultant</h2>
@@ -135,8 +136,8 @@
 					</div>
 				</div>
 			</section>
-			<!-- About::end -->
-			<section>
+
+			<section id="services">
 				<div class="service-banner"></div>
 				<div class="service-text">
 					<div class="text-wrapper">
@@ -164,16 +165,16 @@
 									</ul>
 								</div>
 						</div>
-						<div class="grid-container">
-							<div class="service-feature">
+						<div class="grid-container grid-areas">
+							<div class="service-feature service-info-area">
 									<ul>
 										<li><span>Enabling hiring and training of restaurant employees</span></li>
 										<li><span>Menu engineering</span></li>
 										<li><span>Financial planning</span></li>
 										<li><span>Restaurant interior designing</span></li>
 									</ul>
-								</div>
-							<div class="service-box-head">
+							</div>
+							<div class="service-box-head service-image-area">
 								<div class="tray-image">
 									<img src="images/tray.png" class="img-fluid" alt=""/>
 								</div>
@@ -207,7 +208,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section id="work-with-me">
 				<div class="work-text">
 					<div class="text-wrapper">
 						<h3>RESTAULTANT VILAS KABADI PLAYS MAJOR ROLE <span>IN FOLLOWING AREAS:</span></h3>
@@ -259,8 +260,7 @@
 				</div>
 			</section>
 
-			<!-- contact us -->
-			<section>
+			<section id="contact-us">
 				<div class="contact-wrapper">
 					<div class="home-text">
 						<div class="text-wrapper">
@@ -279,13 +279,13 @@
 											</div>
 											<div class="form-group col-md-6">
 												<label for="email">Email</label>
-												<input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+												<input type="email" class="form-control" id="email" placeholder="Enter Email">
 											</div>
 										</div>
 										<div class="row">
 											<div class="form-group col-md-12">
 												<label for="message">Message</label>
-												<textarea class="form-control" id="message" rows="3" placeholder="Enter Your Messsage"></textarea>
+												<textarea class="form-control" id="message" rows="3" placeholder="Enter Messsage"></textarea>
 											</div>
 										</div>
 										<button type="submit" class="btn btn-primary">Submit</button>
@@ -313,7 +313,7 @@
 				</div>
 			</section>
 	
-			<footer class="fixed-bottom">
+			<footer>
 				<div class="container-fluid">
 					<p class="text-center py-2">&copy; Restaultant Vilas Kabadi 2018</p>
 				</div>
@@ -322,6 +322,7 @@
 		<script src="js/jquery.min.js" crossorigin="anonymous"></script>
 		<script src="js/popper.min.js" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/custom.js"></script>
 	</body>
 </html>
