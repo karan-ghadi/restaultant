@@ -292,3 +292,35 @@ textarea {
 address {
 	color: var(--gold-color);
 }
+
+/* Animation */
+.text {
+  list-style: none;
+	border-bottom: 0;
+	margin: 0;
+}
+
+.text.hidden {
+  border-bottom: 0px solid #fff;
+}
+
+.text li {
+  display: inline-block;
+  float: left;
+  color: var(--black-color);
+	opacity: 1;
+	font-size: 1.5em;
+  transition: all 0.5s ease-in-out;
+  max-width: 2em;
+}
+.text.hidden li.spaced {
+  padding-left: 0;
+}
+.text li.spaced {
+  padding-left: 0.5em;
+}
+
+.text.hidden li.ghost {
+  opacity: 0;
+  max-width: 0;
+}
