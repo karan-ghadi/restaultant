@@ -81,11 +81,10 @@ section {
 
 .navbar.navbar-light.bg-light {
 	background: transparent !important;
-	border-bottom: 1px solid var(--white-color);
 }
 
 .navbar.navbar-light.bg-light.active {
-	background: rgba(0, 0, 0, 0.6) !important;
+	background: var(--black-color) !important;
 }
 
 .navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link {
