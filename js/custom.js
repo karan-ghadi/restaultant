@@ -27,14 +27,23 @@ $(function() {
 		});
 	}
 
-
 	$(window).scroll(function () {    
 		var winScroll = $(window).scrollTop();
+		var about = $('#about-us');
+		var aboutHeight = (about.outerHeight() /2);
+		var aboutJs = about.offset().top - (aboutHeight - 400);
+		
 		if(winScroll > ($(window).outerHeight()/2) ){
 			$('.navbar.navbar-light.bg-light').addClass('active');
 		}else{
 			$('.navbar.navbar-light.bg-light').removeClass('active');
 		}
+		// if(winScroll > aboutJs){
+		// 	console.log(winScroll+ 'true');
+		// 	$('.section-head, .overlay-div').fadeOut(3000);
+		// }else{
+		// 	$('.section-head, .overlay-div').fadeIn('slow');
+		// }
 	});
 
 });
