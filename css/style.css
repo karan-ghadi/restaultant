@@ -80,8 +80,7 @@ section {
 }
 
 .navbar.navbar-light.bg-light {
-	background: transparent !important;
-	/* border-bottom: 1px solid var(--white-color); */
+	background: transparent !important;	/* border-bottom: 1px solid var(--white-color); */
 }
 
 .navbar.navbar-light.bg-light.active {
@@ -228,16 +227,16 @@ section .section-head p {
 	padding: var(--section-padding);
 }
 
-.work-info{
+.work-info {
 	display: grid;
 	justify-content: center;
 	align-content: center;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 50px;
-	
 }
+
 .work-info .work-box {
-	margin:0 20px 20px 0;
+	margin: 0 20px 20px 0;
 }
 
 .work-info .work-box h4 {
@@ -291,4 +290,61 @@ textarea {
 
 address {
 	color: var(--gold-color);
+}
+
+/* Service Section CSS:Start*/
+.service-info .service-wrapper{
+	padding: var(--section-padding);
+	position: relative;
+}
+.service-info .service-details{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.service-info .service-name{
+	position: relative;
+	text-align: center;
+	color: var(--gray-color);
+	font-size: var(--section-para);
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 5px 0;
+}
+.service-info .red-border{
+	position: absolute;
+    background: var(--darkred-color);
+    left: 35%;
+    right: 35%;
+    height: 5px;
+}
+.service-info .service-para{
+	padding: 15px 0;
+	font-size: 16px;
+	color: var(--gray-color);
+	text-align: center;
+}
+.service-info .service-img{
+	padding-bottom: 50px;
+}
+.service-info .service-title {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+.service-info .service-title h3 span {
+	display: block;
+}
+
+.service-info .service-title h3 {
+	font-size: var(--service-text);
+	color: var(--darkred-color);
+	text-transform: uppercase;
 }
