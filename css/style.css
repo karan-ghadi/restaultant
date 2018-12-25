@@ -228,68 +228,6 @@ section .section-head p {
 	padding: var(--section-padding);
 }
 
-.grid-container {
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	grid-template-columns: 1fr 1fr;
-	margin-bottom: 20px;
-}
-
-.grid-areas {
-	grid-template-areas: 'service-info-area service-image-area';
-}
-
-.service-image-area {
-	grid-area: service-image-area;
-}
-
-.service-info-area {
-	grid-area: service-info-area;
-}
-
-.service-box-head {
-	position: relative;
-}
-
-.service-content {
-	text-align: center;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 20%;
-	bottom: 0%;
-}
-
-.service-feature {
-	align-self: center;
-}
-
-.service-feature ul li {
-	font-size: var(--section-para);
-	color: #f68e56;
-	margin-bottom: 20px;
-	line-height: 1.1;
-}
-
-.service-feature ul li span {
-	color: #544842;
-}
-
-.tray-image img {
-	display: block;
-	margin: 0 auto;
-}
-
-.service-content h3 {
-	margin: 10px 0;
-	font-size: var(--service-text);
-}
-
-.service-content h3 span {
-	display: block;
-}
-
 .work-info{
 	display: grid;
 	justify-content: center;

@@ -121,25 +121,6 @@
     background: rgba(0, 0, 0, 0.4) !important;
     border-bottom: 1px solid #fff;
   }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .grid-areas {
-    grid-template-areas: "service-image-area"
-    "service-info-area";
-  }
-
-  .service-box-head {
-    margin-bottom: 20px;
-  }
-
-  .service-content {
-    top: 16%;
-  }
-
   .text-wrapper {
     padding: 5% 10%;
   }
