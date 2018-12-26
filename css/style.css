@@ -386,3 +386,6 @@ address {
 .carousel-indicators {
 	bottom: -15px;
 }
+.carousel-indicators .active{
+	background: var(--darkred-color);
+}
