@@ -163,6 +163,9 @@
   #text-two {
     order: 3;
   }
+  .home-info p{
+    padding-bottom: 15px;
+  }
 }
 
 @media (min-width:320px) and (max-width:413px) {
