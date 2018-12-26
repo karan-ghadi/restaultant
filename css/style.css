@@ -354,17 +354,20 @@ address {
   list-style: none;
 	border-bottom: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .text.hidden {
-  border-bottom: 0px solid #fff;
+	border-bottom: 0px solid #fff;
 }
 
 .text li {
   display: inline-block;
+  float: left;
+  font-weight: 500;
+  font-size: 1.4em;
   color: var(--black-color);
   opacity: 1;
-  font-size: 1.5em;
   transition: all 0.5s ease-in-out;
   max-width: 2em;
 }
@@ -378,4 +381,8 @@ address {
 .text.hidden li.ghost {
   opacity: 0;
   max-width: 0;
+}
+
+.carousel-indicators {
+	bottom: -15px;
 }

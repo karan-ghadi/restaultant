@@ -122,9 +122,10 @@
 
   .navbar.navbar-light.bg-light {
     background: rgba(0, 0, 0, 0.4) !important;
-    border-bottom: 1px solid #fff;
   }
-
+  .text li{
+    font-size: 1.2em;
+  }
   .text-wrapper {
     padding: 5% 10%;
   }
