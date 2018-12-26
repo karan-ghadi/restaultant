@@ -63,6 +63,14 @@
   .contact-wrapper {
     padding-bottom: 80px;
   }
+  .service-info .service-title h3 {
+    font-size: 19px;
+    color: var(--darkred-color);
+    text-transform: uppercase;
+  }
+  .service-wrapper {
+    padding: 10px;
+  }
 
 }
 
