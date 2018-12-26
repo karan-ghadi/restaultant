@@ -55,10 +55,7 @@ $(function () {
 		// 	$('.section-head, .overlay-div').fadeIn('slow');
 		// }
 	
-		$(".owl-carousel").owlCarousel({
-			loop:true,
-			nav:true
-		});
+		$(".owl-carousel").owlCarousel();
 
 		
 
