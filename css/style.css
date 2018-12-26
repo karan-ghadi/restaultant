@@ -322,7 +322,23 @@ address {
 	color: var(--gray-color);
 	text-align: center;
 }
+.service-details .service-title {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.service-info .service-title h3 span {
+	display: block;
+}
 
+.service-info .service-title h3 {
+	font-size: var(--service-text);
+	color: var(--darkred-color);
+	text-transform: uppercase;
+}
 /* Animation */
 .text {
   list-style: none;
