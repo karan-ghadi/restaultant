@@ -47,16 +47,4 @@ $(function () {
 				text.addClass("hidden");
 			}
 		});
-
-		// if(winScroll > aboutJs){
-		// 	console.log(winScroll+ 'true');
-		// 	$('.section-head, .overlay-div').fadeOut(3000);
-		// }else{
-		// 	$('.section-head, .overlay-div').fadeIn('slow');
-		// }
-	
-		$(".owl-carousel").owlCarousel();
-
-		
-
 });
