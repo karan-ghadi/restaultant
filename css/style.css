@@ -293,19 +293,11 @@ address {
 }
 
 /* Service Section CSS:Start*/
-.service-info .service-wrapper{
+.service-wrapper{
 	padding: var(--section-padding);
-	position: relative;
 }
-.service-info .service-details{
-	position: absolute;
-	top: 25%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-align: center;
-}
-.service-info .service-name{
+
+.service-name{
 	position: relative;
 	text-align: center;
 	color: var(--gray-color);
@@ -314,41 +306,19 @@ address {
 	font-weight: 500;
 	padding: 5px 0;
 }
-.service-info .red-border{
+.red-border{
 	position: absolute;
     background: var(--darkred-color);
     left: 35%;
     right: 35%;
     height: 5px;
 }
-.service-info .service-para{
+.service-details .service-para{
 	padding: 15px 0;
 	font-size: 16px;
 	color: var(--gray-color);
 	text-align: center;
 }
-.service-info .service-img{
-	padding-bottom: 50px;
-}
-.service-info .service-title {
-	position: absolute;
-	top: 20%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-align: center;
-}
-
-.service-info .service-title h3 span {
-	display: block;
-}
-
-.service-info .service-title h3 {
-	font-size: var(--service-text);
-	color: var(--darkred-color);
-	text-transform: uppercase;
-}
-
 
 /* Animation */
 .text {
@@ -363,10 +333,9 @@ address {
 
 .text li {
   display: inline-block;
-  float: left;
   color: var(--black-color);
-	opacity: 1;
-	font-size: 1.5em;
+  opacity: 1;
+  font-size: 1.5em;
   transition: all 0.5s ease-in-out;
   max-width: 2em;
 }
