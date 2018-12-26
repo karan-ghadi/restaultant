@@ -306,6 +306,9 @@ address {
 	font-weight: 500;
 	padding: 5px 0;
 }
+.service-details{
+	position: relative;
+}
 .red-border{
 	position: absolute;
     background: var(--darkred-color);
