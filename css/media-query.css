@@ -1,13 +1,13 @@
 @media(min-width:1366px) and (max-width:1440px) {
   :root {
     --section-title: 30px;
-    --service-text: 32px;
+    --service-text: 44px;
     --workinfo-para: 20px;
     --section-para: 20px;
   }
 
   .work-info .work-box h4 {
-    font-size: 24px;
+    font-size: var(--service-text);
   }
 
 }
@@ -97,7 +97,7 @@
     --gold-color: #a3620a;
     --section-heading: 35px;
     --home-text: 30px;
-    --service-text: 22px;
+    --service-text: 26px;
     --workinfo-para: 20px;
     --section-title: 22px;
     --subsection-title: 20px;
