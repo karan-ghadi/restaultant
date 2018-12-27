@@ -8,7 +8,7 @@
 	--darkred-color: #9e0b0f;
 	--gray-color: #5a5a5a;
 	--gold-color: #a3620a;
-	--section-heading: 70px;
+	--section-heading: 60px;
 	--home-text: 40px;
 	--service-text: 44px;
 	--section-title: 37.33px;
@@ -80,11 +80,13 @@ section {
 }
 
 .navbar.navbar-light.bg-light {
-	background: transparent !important;	/* border-bottom: 1px solid var(--white-color); */
+	background: transparent !important;
+		border-bottom: 1px solid var(--white-color);
 }
 
 .navbar.navbar-light.bg-light.active {
 	background: rgba(0, 0, 0, 1) !important;
+	border-bottom: 0 !important;
 }
 
 .navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link {
@@ -129,9 +131,12 @@ section .section-head {
 }
 
 section .section-head h2 {
-	font-size: var(--section-heading);
+	font-size: var(--service-text);
 	color: var(--black-color);
 	font-weight: 400;
+}
+section .section-head h2+h2 {
+	font-size: var(--section-heading);
 }
 
 section .section-head p {
