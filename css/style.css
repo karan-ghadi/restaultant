@@ -112,7 +112,7 @@ section {
 
 /*Navigation*/
 footer {
-	background: var(--darkred-color);
+	background: var(--black-color);
 	color: var(--white-color);
 	padding: 5px 0px;
 	text-align: center;
@@ -132,11 +132,12 @@ section .section-head {
 
 section .section-head h2 {
 	font-size: var(--section-heading);
-	color: var(--black-color);
+	color: var(--darkred-color);
 	font-weight: 400;
 }
 section .section-head h2+h2 {
 	font-size: var(--section-heading);
+	color: var(--black-color);
 }
 
 section .section-head p {
@@ -191,7 +192,10 @@ section .section-head p {
 	text-transform: uppercase;
 	font-weight: 600;
 }
-
+.info-wrapper p {
+	margin-bottom: 20px;
+	text-indent: 50px
+}
 .home-banner {
 	background: url(../images/home-section.jpeg);
 	background-size: cover;
@@ -256,7 +260,7 @@ section .section-head p {
 .work-info .work-box p {
 	font-size: var(--workinfo-para);
 	color: var(--gold-color);
-	text-align: justify;
+	text-align: center;
 }
 
 .contact-wrapper {
@@ -373,7 +377,7 @@ address {
   display: inline-block;
   float: left;
   font-weight: 500;
-  color: var(--black-color);
+  color: var(--darkred-color);
   opacity: 1;
   transition: all 0.5s ease-in-out;
   max-width: 2em;

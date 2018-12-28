@@ -1,9 +1,10 @@
 @media(min-width:1366px) and (max-width:1440px) {
   :root {
     --section-title: 30px;
-    --service-text: 36px;
+    --service-text: 24px;
     --workinfo-para: 20px;
     --section-para: 20px;
+    --section-heading: 50px;
   }
 
   .work-info .work-box h4 {
@@ -130,6 +131,7 @@
 
   .navbar.navbar-light.bg-light {
     background: rgba(0, 0, 0, 0.4) !important;
+    border-bottom: 0px !important;
   }
   .text-wrapper {
     padding: 5% 10%;
