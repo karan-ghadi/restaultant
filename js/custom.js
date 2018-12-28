@@ -44,8 +44,10 @@ $(function() {
 
     if (scroll > $(window).outerHeight() / 2) {
       $('.navbar.navbar-light.bg-light').addClass('active');
+      $('.scrollTop').removeClass('d-none');
     } else {
       $('.navbar.navbar-light.bg-light').removeClass('active');
+      $('.scrollTop').addClass('d-none');
     }
 
     // if (scroll >= about.offset().top - 10) {

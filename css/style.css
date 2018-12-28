@@ -423,10 +423,17 @@ address {
  }
 
 .scrollTop,  .scrollTop:hover{
-	 position: fixed;
-	 bottom: 25px;
-	 right: 25px;
-	 z-index: 9999;
-	 color:var(--darkred-color);
-	 cursor:pointer;
+	position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    width: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
  }
