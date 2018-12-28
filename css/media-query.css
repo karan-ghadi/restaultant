@@ -131,7 +131,7 @@
 
   .navbar.navbar-light.bg-light {
     background: rgba(0, 0, 0, 0.4) !important;
-    border-bottom: 0px !important;
+    /* border-bottom: 0px !important; */
   }
   .text-wrapper {
     padding: 5% 10%;
@@ -140,7 +140,9 @@
   .home-banner {
     height: 55vh;
   }
-
+  .navbar-light .navbar-toggler{
+    border: 0px !important;
+  }
   .work-images img {
     margin-bottom: 10px;
   }
