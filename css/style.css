@@ -421,3 +421,12 @@ address {
 	 width: auto;
 	 opacity: 1;
  }
+
+.scrollTop,  .scrollTop:hover{
+	 position: fixed;
+	 bottom: 25px;
+	 right: 25px;
+	 z-index: 9999;
+	 color:var(--darkred-color);
+	 cursor:pointer;
+ }
