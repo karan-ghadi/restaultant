@@ -109,7 +109,9 @@ section {
 .social-links.navbar-nav .nav-item .nav-link {
 	font-size: 15px;
 }
-
+.social-links{
+	margin-left: 0 !important
+}
 /*Navigation*/
 footer {
 	background: var(--black-color);
