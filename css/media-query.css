@@ -1,7 +1,7 @@
 @media(min-width:1366px) and (max-width:1440px) {
   :root {
     --section-title: 30px;
-    --service-text: 24px;
+    --service-text: 25px;
     --workinfo-para: 20px;
     --section-para: 20px;
     --section-heading: 50px;

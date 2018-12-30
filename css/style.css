@@ -315,8 +315,9 @@ address {
 	color: var(--gray-color);
 	font-size: var(--section-para);
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 500;
 	padding: 5px 0;
+	letter-spacing: 2px;
 }
 .service-details{
 	position: relative;
@@ -438,3 +439,7 @@ address {
     line-height: 40px;
     border-radius: 5px;
  }
+
+.service-name.service-design{
+	min-height: 82px;
+}
