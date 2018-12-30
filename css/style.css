@@ -349,7 +349,7 @@ address {
 }
 .service-details .service-para{
 	padding: 15px 0;
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--gray-color);
 	text-align: center;
 }

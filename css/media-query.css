@@ -10,7 +10,19 @@
   .work-info .work-box h4 {
     font-size: var(--service-text);
   }
+  .service-details .service-para{
+    font-size: 15px;
+  }
 
+}
+
+@media (min-width:1280px) and (max-width:1366px){
+  :root {
+    --service-text: 25px;
+  }
+  .service-details .service-para{
+    font-size: 15px;
+  }
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -72,7 +84,9 @@
   .service-wrapper {
     padding: 10px;
   }
-
+  .service-details .service-para{
+    font-size: 15px;
+  }
 }
 
 @media (min-width:991px) and (max-width:1024px) {
@@ -85,7 +99,9 @@
   .social-links.navbar-nav .nav-item .nav-link {
     font-size: 13px;
   }
-
+  .service-details .service-para{
+    font-size: 15px;
+  }
 }
 
 @media (min-width:320px) and (max-width:767px) {
@@ -178,6 +194,9 @@
   .home-info p{
     padding-bottom: 15px;
   }
+  .service-details .service-para{
+    font-size: 15px;
+  }
 }
 
 @media (min-width:320px) and (max-width:413px) {
@@ -190,5 +209,7 @@
     padding: 0;
     font-size: var(--service-text);
   }
-
+  .service-details .service-para{
+    font-size: 15px;
+  }
 }
