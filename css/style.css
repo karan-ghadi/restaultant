@@ -158,6 +158,7 @@ section .section-head p {
 .text-wrapper h3 {
 	font-size: var(--section-title);
 	font-weight: 300;
+	margin-bottom: 0;
 }
 
 .text-wrapper h3 span {
