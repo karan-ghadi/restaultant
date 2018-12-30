@@ -197,6 +197,9 @@
   .service-details .service-para{
     font-size: 15px;
   }
+  .service-name.service-design{
+    min-height: 0;
+  }
 }
 
 @media (min-width:320px) and (max-width:413px) {
@@ -211,5 +214,8 @@
   }
   .service-details .service-para{
     font-size: 15px;
+  }
+  .service-name.service-design{
+    min-height: 0;
   }
 }
