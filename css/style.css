@@ -327,7 +327,7 @@ address {
   background: var(--darkred-color);
   left: 35%;
   right: 35%;
-  height: 5px;
+  height: 3px;
 }
 .service-details .service-title span{
 	display: block
@@ -422,6 +422,10 @@ address {
  .carousel-control-next, .carousel-control-prev{
 	 width: auto;
 	 opacity: 1;
+ }
+ .fas.fa-angle-left,.fas.fa-angle-right{
+	 color: var(--darkred-color);
+	 font-size: 20px;
  }
 
 .scrollTop,  .scrollTop:hover{
